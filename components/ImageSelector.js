@@ -30,6 +30,7 @@ const ImgPicker = (props) => {
       quality: 0.5,
     })
     setImage(image.uri)
+    props.onImageTaken(image.uri)
   }
   return (
     <View style={styles.imagePicker}>

@@ -10,7 +10,11 @@ export default (state = initialState, action) => {
     case ADD_PLACE:
       return {
         places: state.places.concat(
-          new Place(new Date().toString(), action.placeData.title)
+          new Place(
+            new Date().toString(),
+            action.placeData.title,
+            action.placeData.imageUrl
+          )
         ),
       }
 

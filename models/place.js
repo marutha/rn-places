@@ -1,6 +1,6 @@
 class Place {
-  constructor(id, title) {
-    ;(this.id = id), (this.title = title)
+  constructor(id, title, imageUrl) {
+    ;(this.id = id), (this.title = title), (this.imageUrl = imageUrl)
   }
 }
 
